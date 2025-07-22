@@ -1,0 +1,39 @@
+/* 
+
+Estilos personalizados
+
+Aqui vamos a estilizar las secciones, sus contenidos y el responsivo
+*/
+
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  background-color: #0a2779 ;
+}
+
+/* navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-small);
+}
+
+.navbar-menu{
+  display: flex;
+  gap: var(--space-medium);
+
+}
+.navbar-menu a {
+  font-family: var(--fofont-secondaryn);
+  text-transform: uppercase;
+
+}
+
+.navbar-menu a hover{
+  color: var(--Secundary-color);
+  
+}
