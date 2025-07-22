@@ -1,0 +1,74 @@
+/* 
+  Estilos Glovales
+
+  Aqio definimos estilos y variables que se reutiliuzan en todo el sitio.
+*/
+:root{
+  --primary-color: #A8BE43;
+  --Secundary-color: #C03CE6;
+  --Dark-color: #13132F;
+  --light-color: #F0F0F0;
+
+  --font-primary: "Material sans", sans-serif;
+  --font-secondary: "lilita one", sans-serif;
+
+  --space-small : 16px;
+  --space-normal: 24px;
+  --space-medium: 32px;
+  
+}
+
+body{
+  font-family: var(--font-primary);
+  background-color: var(--light-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-secondary);
+}
+
+
+.Button-primary{
+  display: flex;
+  align-items: center;
+  gap: var(--space-small);
+  padding: var(--space-small) var(--space-normal);
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border-radius: 32px;
+  font-family: var(--font-secondary);
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  transition: background-color 3s;
+}
+
+.Button-primary :hover {
+  color: var(--Dark-color);
+  background-color: var(--Secundary-color);
+}
+
+
+
+.Button-secondary{
+  display: flex;
+  align-items: center;
+  gap: var(--space-small);
+  padding: var(--space-small) var(--space-normal);
+  background-color: var(--Secundary-color);
+  color: var(--light-color);
+  border-radius: 32px;
+  font-family: var(--font-secondary);
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  transition: background-color 3s;
+}
+
+.Button-secondary :hover {
+  color: var(--Dark-color);
+  background-color: var(--primary-color);
+}

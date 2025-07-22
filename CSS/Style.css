@@ -37,3 +37,42 @@ Aqui vamos a estilizar las secciones, sus contenidos y el responsivo
   color: var(--Secundary-color);
   
 }
+
+/* hero */
+
+.hero{
+  height: 100vh;
+  min-height: 700px;
+  background-image: url("../assets/image/back-hero-bacground.jpg");
+  background-size: cover;
+  background-position: center;
+  
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+  color: var(--light-color);
+
+}
+
+.hero-content{
+  width: 50%;
+
+}
+
+.hero-content p {
+  font-size: 1.125rem;
+  margin-bottom: var(--space-medium);
+  max-width: 80%;
+
+}
+
+.hero-action {
+  display: flex;
+  gap: var(--space-small);
+  margin-bottom: var(--space-medium);
+}
+
+.hero-icons{
+  display: flex;
+  gap: var(--space-small);
+}
