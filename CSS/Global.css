@@ -1,9 +1,9 @@
 /* 
-  Estilos Glovales
+  Estilos Globales
 
-  Aqio definimos estilos y variables que se reutiliuzan en todo el sitio.
+  Aquí definimos estilos y variables que se reutilizan en todo el sitio
 */
-:root{
+:root {
   --primary-color: #A8BE43;
   --Secundary-color: #C03CE6;
   --Dark-color: #13132F;
@@ -12,13 +12,13 @@
   --font-primary: "Material sans", sans-serif;
   --font-secondary: "lilita one", sans-serif;
 
-  --space-small : 16px;
+  --space-small: 16px;
   --space-normal: 24px;
   --space-medium: 32px;
-  
+
 }
 
-body{
+body {
   font-family: var(--font-primary);
   background-color: var(--light-color);
 }
@@ -30,10 +30,21 @@ h4,
 h5,
 h6 {
   font-family: var(--font-secondary);
+  color: var(--Dark-color);
+  text-transform: uppercase;
 }
 
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
 
-.Button-primary{
+h3 {
+  font-size: 1.75rem;
+  margin-bottom: 0.8rem;
+}
+
+.Button-primary {
   display: flex;
   align-items: center;
   gap: var(--space-small);
@@ -54,7 +65,7 @@ h6 {
 
 
 
-.Button-secondary{
+.Button-secondary {
   display: flex;
   align-items: center;
   gap: var(--space-small);
@@ -71,4 +82,11 @@ h6 {
 .Button-secondary :hover {
   color: var(--Dark-color);
   background-color: var(--primary-color);
+}
+
+/* wrapper */
+.wrapper {
+
+  max-width: 1200px;
+  margin: 0;
 }
