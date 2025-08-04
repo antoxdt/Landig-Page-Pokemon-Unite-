@@ -200,3 +200,12 @@ Aquí vamos a estilizar las secciones, sus contenidos y el responsivo
 .carousel-controls span {
   font-size: 3rem;
 }
+
+/* About */
+
+.about{
+  background-image: url("../assets/image/fondo.png");
+  background-size: ;
+  background: #721ed9;
+background: linear-gradient(90deg,rgba(114, 30, 217, 0.75) 0%, rgba(142, 83, 237, 0.28) 100%);
+}
