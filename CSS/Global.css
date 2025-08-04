@@ -13,13 +13,22 @@
   --font-secondary: "lilita one", sans-serif;
  
   --Dark-color-transparent: #13132f6d;
+  --dark-color-transparent: #13132f8a;
 
   --space-small: 16px;
   --space-normal: 24px;
   --space-medium: 32px;
- 
+   --space-large:  48px;
+  --space-xl:     56px;
+  --space-2xl:    64px;
+  
+  /*height dir ascroll oftten*/
+
+  --offset-heigth: 150px ;
+
 
 }
+
 
 body {
   font-family: var(--font-primary);
@@ -49,6 +58,8 @@ button {
 
 section{
   margin-bottom: var(--space-medium);
+  scroll-margin-top: var(--offset-heigth);
+  margin-bottom: var(--space-2xl) ;
 }
 
 h3 {
