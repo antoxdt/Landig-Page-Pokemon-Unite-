@@ -12,7 +12,7 @@ Aquí vamos a estilizar las secciones, sus contenidos y el responsivo
   background-color: #0a2779;
 }
 
-/* navbar */
+/*navbar*/
 
 .navbar {
   display: flex;
@@ -30,6 +30,7 @@ Aquí vamos a estilizar las secciones, sus contenidos y el responsivo
 .navbar-menu a {
   font-family: var(--font-secondary);
   text-transform: uppercase;
+  color: var(--light-color);
 
 }
 
@@ -38,7 +39,7 @@ Aquí vamos a estilizar las secciones, sus contenidos y el responsivo
 
 }
 
-/* hero */
+/*hero*/
 
 
 .hero {
@@ -67,7 +68,7 @@ Aquí vamos a estilizar las secciones, sus contenidos y el responsivo
 
 }
 
-.hero-action {
+.hero-actions {
   display: flex;
   gap: var(--space-small);
   margin-bottom: var(--space-medium);
@@ -78,9 +79,10 @@ Aquí vamos a estilizar las secciones, sus contenidos y el responsivo
   gap: var(--space-small);
 }
 
-.characters {
-  background-color: wheat;
+/*characters*/
 
+.characters {
+  background-color: var(--light-color);
 }
 
 .characters-header {
@@ -89,6 +91,7 @@ Aquí vamos a estilizar las secciones, sus contenidos y el responsivo
 
 .characters-content {
   display: flex;
+  align-items: center;
 }
 
 .characters-thumbnails {
@@ -100,14 +103,12 @@ Aquí vamos a estilizar las secciones, sus contenidos y el responsivo
   overflow: hidden;
   cursor: pointer;
   filter: brightness(0.6);
+  transition: filter 0.3s ease;
 }
 
 .thumbnails-item:hover {
   filter: brightness(1);
 }
-
-
-
 
 .characters-showcase {
   width: 50%;
@@ -130,15 +131,11 @@ Aquí vamos a estilizar las secciones, sus contenidos y el responsivo
 }
 
 
-.wrapper{ 
+/*media*/
 
-}
-
-/* media */
-
-.media-header{
+.media-header {
   text-align: center;
-  margin-bottom:  var(--space-medium);
+  margin-bottom: var(--space-medium);
 }
 
 .carousel {
@@ -156,11 +153,21 @@ Aquí vamos a estilizar las secciones, sus contenidos y el responsivo
 
 .carousel-item {
   position: relative;
+  cursor: pointer;
+  border-radius: 1rem;
+  overflow: hidden;
+
 }
 
 .carousel-item img {
   width: 100%;
   height: auto;
+  filter: brightness(0.6);
+  transition: filtler:0.3 ease;
+}
+
+.carousel-item:hober img {
+  filter: brightness(1);
 }
 
 .carousel-item span {
@@ -171,13 +178,25 @@ Aquí vamos a estilizar las secciones, sus contenidos y el responsivo
   font-size: 3rem;
   color: var(--dark-color);
 }
-.carousel-controls{
+
+.carousel-item:hover span {
+  color: var(--primary-color);
+}
+
+
+.carousel-controls {
   display: flex;
   justify-content: center;
 }
+
 .carousel-controls button {
   color: var(--dark-color);
 }
+
+.carousel-controls button:hover {
+  color: var(--Secundary-color);
+}
+
 .carousel-controls span {
   font-size: 3rem;
 }
