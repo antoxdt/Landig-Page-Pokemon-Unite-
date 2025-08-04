@@ -11,10 +11,13 @@
 
   --font-primary: "Material sans", sans-serif;
   --font-secondary: "lilita one", sans-serif;
+ 
+  --Dark-color-transparent: #13132f6d;
 
   --space-small: 16px;
   --space-normal: 24px;
   --space-medium: 32px;
+ 
 
 }
 
@@ -38,6 +41,14 @@ h6 {
 h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+section{
+  margin-bottom: var(--space-medium);
 }
 
 h3 {
