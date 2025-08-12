@@ -12,7 +12,7 @@ Aquí vamos a estilizar las secciones, sus contenidos y el responsivo
   background-color: #0a2779;
 }
 
-/*navbar*/
+/* navbar */
 
 .navbar {
   display: flex;
@@ -24,28 +24,24 @@ Aquí vamos a estilizar las secciones, sus contenidos y el responsivo
 .navbar-menu {
   display: flex;
   gap: var(--space-medium);
-
 }
 
 .navbar-menu a {
   font-family: var(--font-secondary);
   text-transform: uppercase;
   color: var(--light-color);
-
 }
 
 .navbar-menu a:hover {
-  color: var(--Secundary-color);
-
+  color: var(--secondary-color);
 }
 
-/*hero*/
-
+/* hero */
 
 .hero {
   height: 100vh;
   min-height: 700px;
-  background-image: url("../assets/image/back-hero-bacground.jpg");
+  background-image: url("../Assets/Image/back-hero-bacground.jpg");
   background-size: cover;
   background-position: center;
 
@@ -53,19 +49,16 @@ Aquí vamos a estilizar las secciones, sus contenidos y el responsivo
   justify-content: flex-end;
   align-items: center;
   color: var(--light-color);
-
 }
 
 .hero-content {
   width: 50%;
-
 }
 
 .hero-content p {
   font-size: 1.125rem;
   margin-bottom: var(--space-medium);
   max-width: 80%;
-
 }
 
 .hero-actions {
@@ -79,7 +72,7 @@ Aquí vamos a estilizar las secciones, sus contenidos y el responsivo
   gap: var(--space-small);
 }
 
-/*characters*/
+/* characters */
 
 .characters {
   background-color: var(--light-color);
@@ -106,7 +99,7 @@ Aquí vamos a estilizar las secciones, sus contenidos y el responsivo
   transition: filter 0.3s ease;
 }
 
-.thumbnails-item:hover {
+.thumbnail-item:hover {
   filter: brightness(1);
 }
 
@@ -124,14 +117,11 @@ Aquí vamos a estilizar las secciones, sus contenidos y el responsivo
   gap: var(--space-medium);
 }
 
-
-
 .character-info {
-  margin-bottom: center;
+  margin-bottom: 1rem;
 }
 
-
-/*media*/
+/* media */
 
 .media-header {
   text-align: center;
@@ -156,17 +146,16 @@ Aquí vamos a estilizar las secciones, sus contenidos y el responsivo
   cursor: pointer;
   border-radius: 1rem;
   overflow: hidden;
-
 }
 
 .carousel-item img {
   width: 100%;
   height: auto;
   filter: brightness(0.6);
-  transition: filtler:0.3 ease;
+  transition: filter 0.3s ease;
 }
 
-.carousel-item:hober img {
+.carousel-item:hover img {
   filter: brightness(1);
 }
 
@@ -183,7 +172,6 @@ Aquí vamos a estilizar las secciones, sus contenidos y el responsivo
   color: var(--primary-color);
 }
 
-
 .carousel-controls {
   display: flex;
   justify-content: center;
@@ -194,7 +182,7 @@ Aquí vamos a estilizar las secciones, sus contenidos y el responsivo
 }
 
 .carousel-controls button:hover {
-  color: var(--Secundary-color);
+  color: var(--secondary-color);
 }
 
 .carousel-controls span {
@@ -203,9 +191,9 @@ Aquí vamos a estilizar las secciones, sus contenidos y el responsivo
 
 /* About */
 
-.about{
-  background-image: url("../assets/image/fondo.png");
-  background-size: ;
-  background: #721ed9;
-background: linear-gradient(90deg,rgba(114, 30, 217, 0.75) 0%, rgba(142, 83, 237, 0.28) 100%);
+.about {
+  background: linear-gradient(90deg, rgba(114, 30, 217, 0.75) 0%, rgba(142, 83, 237, 0.28) 100%), url("../Assets/Image/fondo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--light-color);
 }

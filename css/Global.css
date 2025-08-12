@@ -5,30 +5,26 @@
 */
 :root {
   --primary-color: #A8BE43;
-  --Secundary-color: #C03CE6;
-  --Dark-color: #13132F;
+  --secondary-color: #C03CE6;
+  --dark-color: #13132F;
   --light-color: #F0F0F0;
 
-  --font-primary: "Material sans", sans-serif;
-  --font-secondary: "lilita one", sans-serif;
+  --font-primary: "Martel Sans", sans-serif;
+  --font-secondary: "Lilita One", cursive;
  
-  --Dark-color-transparent: #13132f6d;
-  --dark-color-transparent: #13132f8a;
+  --dark-color-transparent: #13132f6d;
+  --dark-color-transparent-strong: #13132f8a;
 
   --space-small: 16px;
   --space-normal: 24px;
   --space-medium: 32px;
-   --space-large:  48px;
-  --space-xl:     56px;
-  --space-2xl:    64px;
+  --space-large: 48px;
+  --space-xl: 56px;
+  --space-2xl: 64px;
   
-  /*height dir ascroll oftten*/
-
-  --offset-heigth: 150px ;
-
-
+  /* height dir scroll often */
+  --offset-height: 150px;
 }
-
 
 body {
   font-family: var(--font-primary);
@@ -43,7 +39,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-secondary);
-  color: var(--Dark-color);
+  color: var(--dark-color);
   text-transform: uppercase;
 }
 
@@ -56,10 +52,9 @@ button {
   cursor: pointer;
 }
 
-section{
-  margin-bottom: var(--space-medium);
-  scroll-margin-top: var(--offset-heigth);
-  margin-bottom: var(--space-2xl) ;
+section {
+  scroll-margin-top: var(--offset-height);
+  margin-bottom: var(--space-2xl);
 }
 
 h3 {
@@ -81,19 +76,17 @@ h3 {
   transition: background-color 0.3s ease;
 }
 
-.Button-primary :hover {
-  color: var(--Dark-color);
-  background-color: var(--Secundary-color);
+.Button-primary:hover {
+  color: var(--dark-color);
+  background-color: var(--secondary-color);
 }
-
-
 
 .Button-secondary {
   display: flex;
   align-items: center;
   gap: var(--space-small);
   padding: var(--space-small) var(--space-normal);
-  background-color: var(--Secundary-color);
+  background-color: var(--secondary-color);
   color: var(--light-color);
   border-radius: 32px;
   font-family: var(--font-secondary);
@@ -102,14 +95,13 @@ h3 {
   transition: background-color 0.3s ease;
 }
 
-.Button-secondary :hover {
-  color: var(--Dark-color);
+.Button-secondary:hover {
+  color: var(--dark-color);
   background-color: var(--primary-color);
 }
 
 /* wrapper */
 .wrapper {
-
   max-width: 1800px;
-  margin: 0;
+  margin: 0 auto;
 }

@@ -1,32 +1,32 @@
 /* 
 Estilos preestablecidos
 
-Aqui cambiamos el estilo por el default de os elementos de html
-
+Aqui cambiamos el estilo por el default de los elementos de html
 */
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
+
 ul,
-ol{
+ol {
   list-style: none;
 }
 
-button{
+button {
   cursor: pointer;
-  background-color: none;
+  background-color: transparent;
   border: none;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
   display: block;
